@@ -2,67 +2,443 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Privacy Policy - Userscripts For All</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Rosie (Amplify Beta Extension)</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   sans-serif;
       max-width: 800px;
       margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
+      padding: 0 24px 60px;
+      line-height: 1.7;
+      color: #222;
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 24px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 12px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 36px;
+      color: #111;
+    }
+    h3 {
+      font-size: 15px;
+      margin-top: 24px;
       color: #333;
     }
-    h1 { color: #111; }
-    h2 { color: #444; margin-top: 30px; }
+    .meta {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    th {
+      background: #f5f5f5;
+      text-align: left;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      font-weight: 600;
+    }
+    td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td {
+      background: #fafafa;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .tag-yes {
+      background: #fde8e8;
+      color: #c0392b;
+    }
+    .tag-no {
+      background: #e8f5e9;
+      color: #27ae60;
+    }
+    .callout {
+      background: #f8f9fa;
+      border-left: 4px solid #1a73e8;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      border-radius: 0 4px 4px 0;
+    }
+    a {
+      color: #1a73e8;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 13px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Userscripts For All</h1>
-  <p><strong>Last updated: August 31, 2026</strong></p>
 
-  <h2>Overview</h2>
-  <p>Userscripts For All is a Chrome extension that allows users to 
-  manage and run userscripts on web pages. This policy explains what 
-  data is collected and how it is used.</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    Rosie — Amplify Beta Extension &nbsp;|&nbsp;
+    Effective date: October 7, 2026 &nbsp;|&nbsp;
+    Version 1.4.0
+  </p>
 
-  <h2>Data We Collect</h2>
-  <p>We do not collect, transmit, or share any personal data with 
-  third parties. All data is stored locally on your device using 
-  chrome.storage.local and never leaves your machine except as 
-  described below.</p>
+  <div class="callout">
+    Rosie is an internal tool for Amplify Education team members only.
+    It is not available to or intended for use by the general public.
+  </div>
 
-  <h2>Data Stored Locally</h2>
-  <p>The following data is stored on your device only:</p>
+  <h2>1. What Rosie Does</h2>
+  <p>
+    Rosie is an internal Chrome extension that fetches, manages, and injects
+    approved automation scripts ("bots") into specific work tools used by
+    Amplify Education team members, including Amplify's classroom platform,
+    Notion, Google Docs, Jira, Smartsheet, and Desmos. It provides a popup
+    interface for enabling, disabling, and running those scripts, and sends
+    anonymous usage telemetry to an internal Amplify Education tracking sheet.
+  </p>
+
+  <h2>2. Data We Collect</h2>
+  <p>
+    Rosie collects data in four categories. Each is described in full below.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Collected?</th>
+        <th>Stored?</th>
+        <th>Transmitted?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Personally identifiable information</td>
+        <td><span class="tag tag-yes">Yes</span></td>
+        <td>Locally + synced</td>
+        <td>Internal Amplify sheet</td>
+      </tr>
+      <tr>
+        <td>Authentication information (cookies)</td>
+        <td><span class="tag tag-yes">Yes</span></td>
+        <td><span class="tag tag-no">Never</span></td>
+        <td><span class="tag tag-no">Never</span></td>
+      </tr>
+      <tr>
+        <td>User activity</td>
+        <td><span class="tag tag-yes">Yes</span></td>
+        <td>Locally</td>
+        <td>Internal Amplify sheet</td>
+      </tr>
+      <tr>
+        <td>Website content</td>
+        <td><span class="tag tag-yes">Yes — injected only</span></td>
+        <td><span class="tag tag-no">Never</span></td>
+        <td><span class="tag tag-no">Never</span></td>
+      </tr>
+      <tr>
+        <td>Health information</td>
+        <td><span class="tag tag-no">No</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Financial information</td>
+        <td><span class="tag tag-no">No</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Personal communications</td>
+        <td><span class="tag tag-no">No</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td><span class="tag tag-no">No</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Web history</td>
+        <td><span class="tag tag-no">No</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Personally Identifiable Information</h2>
+  <p>
+    Rosie collects your name and email address from Google's OAuth userinfo
+    endpoint when you first use the extension, using the
+    <code>openid</code>, <code>email</code>, and <code>profile</code>
+    OAuth scopes. A persistent anonymous identifier (UUID) is generated
+    once at first use and preserved across reinstalls and devices.
+  </p>
+
+  <h3>What we store</h3>
   <ul>
-    <li>Installed userscripts and their source code</li>
-    <li>Your GitHub Personal Access Token</li>
-    <li>Script enable/disable preferences</li>
+    <li>
+      Your name, email address, and UUID are stored in
+      <code>chrome.storage.sync</code> so you appear as the same entry
+      in the internal tracking sheet across all Chrome devices where you
+      are signed into the same Google account.
+    </li>
+    <li>
+      Your telemetry state (last ping timestamp, error state, and the
+      list of bots you have previously enabled and disabled) is stored
+      in <code>chrome.storage.local</code> on your device only.
+    </li>
   </ul>
 
-  <h2>GitHub Communication</h2>
-  <p>If you choose to connect a GitHub repository, the extension will 
-  communicate with GitHub's servers (raw.githubusercontent.com) solely 
-  to fetch and sync userscripts. Your GitHub Personal Access Token is 
-  stored locally on your device and is only ever sent to GitHub's 
-  servers to authenticate these requests. It is never sent anywhere 
-  else.</p>
+  <h3>What we transmit</h3>
+  <p>
+    Your name, email address, UUID, current extension version, list of
+    currently enabled bots, list of previously enabled and disabled bots,
+    and the event reason are transmitted to an internal Amplify Education
+    Google Apps Script endpoint at
+    <code>script.google.com</code>, which upserts one row per user in a
+    Google Sheet used for internal analytics. This data is transmitted
+    when:
+  </p>
+  <ul>
+    <li>You open the Rosie popup (heartbeat event)</li>
+    <li>You toggle a bot on or off (toggle event, debounced to one ping
+        per 10-second window)</li>
+    <li>You manually retry registration from the popup (retry event)</li>
+  </ul>
 
-  <h2>Script Injection</h2>
-  <p>This extension injects userscripts into web pages as directed by 
-  each script's @match rules. The extension itself does not monitor, 
-  record, or transmit any data from pages you visit.</p>
+  <h3>Purpose</h3>
+  <p>
+    This data is used exclusively for internal Amplify Education analytics
+    to understand which automation tools are actively used by the team.
+    It is not sold, licensed, or shared with any third party outside of
+    Amplify Education.
+  </p>
 
-  <h2>Third Party Services</h2>
-  <p>The only third party service this extension communicates with is 
-  GitHub (github.com / raw.githubusercontent.com), and only when a 
-  GitHub repository has been configured by the user.</p>
+  <h2>4. Authentication Information</h2>
+  <p>
+    Rosie reads Notion session cookies — including <code>token_v2</code>
+    — on behalf of userscripts that make authenticated calls to Notion's
+    internal API.
+  </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>Any changes to this privacy policy will be reflected on this 
-  page with an updated date.</p>
+  <h3>How cookie access is restricted</h3>
+  <p>
+    Cookie access is governed by a strict internal allowlist that enforces
+    all four of the following checks before any cookie is read:
+  </p>
+  <ol>
+    <li>
+      The target URL must map to a permitted destination. Currently only
+      <code>notion.com</code> and <code>notion.so</code> are permitted
+      for cookie access. Jira (<code>atlassian.net</code>) and Smartsheet
+      explicitly have cookie access denied.
+    </li>
+    <li>
+      The request must originate from a permitted bridge host
+      (<code>amplify.com</code> or <code>docs.google.com</code>). Notion's
+      own pages are excluded as request origins to prevent Notion page
+      scripts from accessing Notion session cookies.
+    </li>
+    <li>
+      The cookie domain specified in the request must not exceed the
+      permitted destination.
+    </li>
+    <li>
+      The request must originate from a verified top-frame content script,
+      not from a page script or iframe.
+    </li>
+  </ol>
 
-  <h2>Contact</h2>
-  <p>If you have any questions about this privacy policy please 
-  contact jchow@amplify.com.</p>
+  <h3>How cookies are used</h3>
+  <p>
+    Notion session cookies are read transiently, used to construct a
+    single authenticated request to Notion's API on behalf of the running
+    userscript, and discarded immediately. They are never stored by the
+    extension, never written to <code>chrome.storage</code>, and never
+    transmitted to any server other than Notion.
+  </p>
+
+  <h3>Google OAuth token</h3>
+  <p>
+    The extension uses a Google OAuth Bearer token to authenticate
+    telemetry POST requests to the internal Amplify Apps Script endpoint.
+    This token is obtained via Chrome's built-in
+    <code>chrome.identity</code> API and is never stored by the extension.
+    It is obtained fresh for each telemetry request and discarded after use.
+  </p>
+
+  <h2>5. User Activity</h2>
+  <p>
+    Rosie tracks which bots you have enabled and which you have previously
+    enabled and then disabled. This information is stored locally in
+    <code>chrome.storage.local</code> and transmitted to the internal
+    Amplify Education tracking sheet as part of telemetry events described
+    in Section 3.
+  </p>
+  <p>
+    No other user activity is tracked. Rosie does not record keystrokes,
+    mouse movements, form inputs, page interactions, or any other
+    behavioural data.
+  </p>
+
+  <h2>6. Website Content</h2>
+  <p>
+    Rosie injects approved automation scripts into web pages on the
+    following domains:
+  </p>
+  <ul>
+    <li><code>*.amplify.com</code></li>
+    <li><code>docs.google.com</code></li>
+    <li><code>*.notion.com</code> and <code>*.notion.so</code></li>
+    <li><code>amplify-education.atlassian.net</code></li>
+    <li><code>*.desmos.com</code></li>
+    <li><code>*.smartsheet.com</code></li>
+  </ul>
+  <p>
+    Injected scripts automate tasks on these pages on behalf of the user.
+    The Rosie extension infrastructure itself does not read, store, or
+    transmit page content. Any data accessed or modified by an injected
+    script is handled by that script in accordance with its individual
+    documented purpose.
+  </p>
+
+  <h2>7. Data We Do Not Collect</h2>
+  <ul>
+    <li>Health or medical information</li>
+    <li>Financial or payment information</li>
+    <li>Personal communications (email, messages, chat)</li>
+    <li>Precise or approximate location</li>
+    <li>Full browsing history</li>
+  </ul>
+  <p>
+    Tab URLs are read transiently to determine which scripts match the
+    current page. They are never stored, logged, or transmitted.
+  </p>
+
+  <h2>8. Data Sharing</h2>
+  <p>
+    Rosie does not sell, license, or transfer user data to any third party.
+    The only external transmission of data is the telemetry payload
+    described in Section 3, which is sent to an internal Amplify Education
+    Google Apps Script endpoint. This data is used exclusively for internal
+    Amplify Education analytics and is accessible only to authorised
+    Amplify Education staff.
+  </p>
+  <p>
+    Rosie does not use or transfer user data for purposes unrelated to its
+    single purpose as an internal automation script manager.
+    Rosie does not use or transfer user data to determine creditworthiness
+    or for lending purposes.
+  </p>
+
+  <h2>9. Data Retention</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Where stored</th>
+        <th>Retention</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name, email, UUID</td>
+        <td>chrome.storage.sync + internal Google Sheet</td>
+        <td>Until you uninstall the extension or request deletion</td>
+      </tr>
+      <tr>
+        <td>Telemetry state</td>
+        <td>chrome.storage.local</td>
+        <td>Until you clear extension data or uninstall</td>
+      </tr>
+      <tr>
+        <td>Bot catalog cache</td>
+        <td>chrome.storage.local</td>
+        <td>Refreshed every 5 minutes automatically</td>
+      </tr>
+      <tr>
+        <td>Script source cache</td>
+        <td>chrome.storage.local</td>
+        <td>Replaced on each version update</td>
+      </tr>
+      <tr>
+        <td>GM script storage</td>
+        <td>chrome.storage.local</td>
+        <td>Until cleared by the script or you clear extension data</td>
+      </tr>
+      <tr>
+        <td>Notion session cookies</td>
+        <td>Not stored</td>
+        <td>Not retained — discarded after each use</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>10. Your Rights</h2>
+  <p>
+    As an Amplify Education team member you may request deletion of your
+    telemetry data from the internal tracking sheet by contacting your
+    Amplify IT administrator. You can clear all locally stored extension
+    data at any time by going to
+    <code>chrome://extensions</code> → Details → Clear site data.
+    Uninstalling the extension removes all locally stored data immediately.
+  </p>
+
+  <h2>11. Security</h2>
+  <p>
+    All external requests made by Rosie use HTTPS. Cookie access is
+    restricted by a strict internal allowlist. Message routing between
+    the extension's content scripts, the page context, and the background
+    service worker validates the sender's identity and origin on every
+    message. GM storage access is scoped per-script and per-host and
+    cannot be accessed by scripts outside their permitted domains.
+  </p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>
+    If this policy is updated the effective date at the top of this page
+    will be revised. Continued use of the extension after a policy update
+    constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    For questions about this privacy policy or to request data deletion,
+    please contact your Amplify Education IT administrator or the Rosie
+    extension maintainer at
+    <a href="mailto:gepstein@amplify.com">gepstein@amplify.com</a>.
+  </p>
+
+  <footer>
+    Rosie — Amplify Beta Extension &nbsp;|&nbsp;
+    Privacy Policy &nbsp;|&nbsp;
+    Effective October 7, 2026
+  </footer>
+
 </body>
 </html>
